@@ -1,0 +1,35 @@
+
+ .timer {
+    position:absolute;
+    top:55%; left:50%;
+    transform: translate(-50%, -50%);
+    width: 27vw;
+    height: 27vw;
+    min-width: 220px;
+    min-height: 220px;
+    background: #b8b8b8 ;
+    border: 20px solid #E6E6E6;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+}
+.TimeScreen {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-7%);
+    font-family: 'Roboto';
+    font-size: calc(15px + 4vw);
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
+
+
+@keyframes pulse{
+    50%{
+        box-shadow: 0 0 20px 3px #5a99d4;
+    }
+    }
